@@ -267,7 +267,7 @@ autonomy for your data:
 
   * `ALARM_TYPES` (`simple` if any `BG_`* ENV's are set, otherwise `predict`) - currently 2 alarm types are supported, and can be used independently or combined.  The `simple` alarm type only compares the current BG to `BG_` thresholds above, the `predict` alarm type uses highly tuned formula that forecasts where the BG is going based on it's trend.  `predict` **DOES NOT** currently use any of the `BG_`* ENV's
   * `BG_HIGH` (`260`) - the high BG outside the target range that is considered urgent (interprets units based on DISPLAY_UNITS setting)
-  * `BG_TARGET_TOP` (`180`) - the top of the target range, also used to draw the line on the chart (interprets units based on DISPLAY_UNITS setting)
+  * `BG_TARGET_TOP` (`170`) - the top of the target range, also used to draw the line on the chart (interprets units based on DISPLAY_UNITS setting)
   * `BG_TARGET_BOTTOM` (`80`) - the bottom of the target range, also used to draw the line on the chart (interprets units based on DISPLAY_UNITS setting)
   * `BG_LOW` (`55`) - the low BG outside the target range that is considered urgent (interprets units based on DISPLAY_UNITS setting)
   * `ALARM_URGENT_HIGH` (`on`) - possible values `on` or `off`
